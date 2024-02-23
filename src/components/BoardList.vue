@@ -33,7 +33,7 @@
             },
             getBoardList() {
                 axios
-                    .get('http://127.0.0.1:8888/board/get-board-list.do')
+                    .get('http://127.0.0.1:8881/board/get-board-list.do')
                     .then((response) => {
                         if (response.data.success) {
                             this.boardList = response.data.result;
