@@ -51,7 +51,7 @@
                 // 글 수정이 아니라면 글 등록 호출
                 if (!this.editMode) {
                     axios
-                        .post('http://localhost:8081/board/regist-board.do', this.setParams)
+                        .post('http://127.0.0.1:8787/board/regist-board.do', this.setParams)
                         .then((response) => {
                             if (response.data.success || response.data.result) {
                                 // 창의 화면 변수 false로 창 닫기
@@ -70,7 +70,7 @@
                 // 글 수정을 호출
                 else {
                     axios
-                        .post('http://localhost:8081/board/edit-board.do', this.setParams)
+                        .post('http://127.0.0.1:8787/board/edit-board.do', this.setParams)
                         .then((response) => {
                             if (response.data.success || response.data.result) {
                                 // 창의 화면 변수 false로 창 닫기

@@ -44,7 +44,7 @@
                     bno: row.bno,
                 };
                 axios
-                    .post('http://localhost:8081/board/get-board-detail.do', params)
+                    .post('http://127.0.0.1:8787/board/get-board-detail.do', params)
                     .then((response) => {
                         if (response.data.success) {
                             this.boardDetail = response.data.result;
@@ -68,7 +68,7 @@
                     bno: this.boardDetail.bno,
                 };
                 axios
-                    .post('http://localhost:8081/board/delete-board.do', params)
+                    .post('http://127.0.0.1:8787/board/delete-board.do', params)
                     .then((response) => {
                         if (response.data.success) {
                             this.openDetail = false;
