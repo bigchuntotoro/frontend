@@ -44,7 +44,7 @@
                     bno: row.bno,
                 };
                 axios
-                    .post('http://192.168.56.101:8181/board/get-board-detail.do', params) //Spring
+                    .post('http://192.168.56.101:8181/vueBoard/board/get-board-detail.do', params) //Spring
                     //.post('http://192.168.56.101:8888/board/get-board-detail.do', params) //Spring Boot
                     .then((response) => {
                         if (response.data.success) {
@@ -69,7 +69,7 @@
                     bno: this.boardDetail.bno,
                 };
                 axios
-                    .post('http://192.168.56.101:8181/board/delete-board.do', params) //Spring
+                    .post('http://192.168.56.101:8181/vueBoard/board/delete-board.do', params) //Spring
                     //.post('http://192.168.56.101:8888/board/delete-board.do', params) //Spring Boot
                     .then((response) => {
                         if (response.data.success) {
