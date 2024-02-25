@@ -44,8 +44,8 @@
                     bno: row.bno,
                 };
                 axios
-                    //.post('http://192.168.56.101:8181/vueBoard/board/get-board-detail.do', params) //Spring
-                    .post('http://192.168.56.101:8888/board/get-board-detail.do', params) //Spring Boot
+                    .post('http://192.168.56.101:8181/vueBoard/board/get-board-detail.do', params) //Spring
+                    //.post('http://192.168.56.101:8888/board/get-board-detail.do', params) //Spring Boot
                     .then((response) => {
                         if (response.data.success) {
                             this.boardDetail = response.data.result;
@@ -69,8 +69,8 @@
                     bno: this.boardDetail.bno,
                 };
                 axios
-                    //.post('http://192.168.56.101:8181/vueBoard/board/get-board-detail.do', params) //Spring
-                    .post('http://192.168.56.101:8888/board/get-board-detail.do', params) //Spring Boot
+                    .post('http://192.168.56.101:8181/vueBoard/board/get-board-detail.do', params) //Spring
+                    //.post('http://192.168.56.101:8888/board/get-board-detail.do', params) //Spring Boot
                     .then((response) => {
                         if (response.data.success) {
                             this.openDetail = false;
