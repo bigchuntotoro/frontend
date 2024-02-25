@@ -51,7 +51,7 @@
                 // 글 수정이 아니라면 글 등록 호출
                 if (!this.editMode) {
                     axios
-                        .post('http://192.168.56.101:8181/vueBoard/board/regist-board.do', this.setParams) //Spring
+                        .post('http://192.168.56.101:8888/board/regist-board.do', this.setParams) //Spring
                         //.post('http://192.168.56.101:8888/board/regist-board.do', this.setParams) //Spring Boot
                         .then((response) => {
                             if (response.data.success || response.data.result) {
@@ -71,8 +71,8 @@
                 // 글 수정을 호출
                 else {
                     axios
-                        .post('http://192.168.56.101:8181/vueBoard/board/regist-board.do', this.setParams) //Spring
-                        //.post('http://192.168.56.101:8888/board/regist-board.do', this.setParams) //Spring Boot
+                        .post('http://192.168.56.101:8888/board/edit-board.do', this.setParams) //Spring
+                        //.post('http://192.168.56.101:8888/board/edit-board.do', this.setParams) //Spring Boot
                         .then((response) => {
                             if (response.data.success || response.data.result) {
                                 // 창의 화면 변수 false로 창 닫기
