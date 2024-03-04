@@ -1,7 +1,7 @@
 <template>
     <div>
         <el-table border :data="boardList" @row-click="clickRow">
-            <el-table-column :min-width="20" prop="bno" label="글번호"></el-table-column>
+            <el-table-column :min-width="25" prop="bno" label="글번호"></el-table-column>
             <el-table-column prop="title" label="제목"></el-table-column>
             <el-table-column prop="content" label="내용"></el-table-column>
             <el-table-column :min-width="20" prop="writer" label="작성자"> </el-table-column>
@@ -34,7 +34,8 @@
             getBoardList() {
                 axios
                     //.get('http://192.168.56.101:8181/vueBoard/board/get-board-list.do') //Spring 
-                    .get('http://192.168.56.101:8888/board/get-board-list.do') //Spring Boot
+                    //.get('http://192.168.56.101:8888/board/get-board-list.do') //Spring Boot
+                    .get('http://ec2-43-200-96-196.ap-northeast-2.compute.amazonaws.com:8888/board/get-board-list.do') //Spring Boot
                     .then((response) => {
                         if (response.data.success) {
                             this.boardList = response.data.result;

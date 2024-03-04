@@ -52,7 +52,7 @@
                 if (!this.editMode) {
                     axios
                         //.post('http://192.168.56.101:8181/vueBoard/board/regist-board.do', this.setParams) //Spring
-                        .post('http://192.168.56.101:8888/board/regist-board.do', this.setParams) //Spring Boot
+                        .post('http://ec2-43-200-96-196.ap-northeast-2.compute.amazonaws.com:8888/board/regist-board.do', this.setParams) //Spring Boot
                         .then((response) => {
                             if (response.data.success || response.data.result) {
                                 // 창의 화면 변수 false로 창 닫기
@@ -72,7 +72,7 @@
                 else {
                     axios
                         //.post('http://192.168.56.101:8181/vueBoard/board/edit-board.do', this.setParams) //Spring
-                        .post('http://192.168.56.101:8888/board/edit-board.do', this.setParams) //Spring Boot
+                        .post('http://ec2-43-200-96-196.ap-northeast-2.compute.amazonaws.com:8888/board/edit-board.do', this.setParams) //Spring Boot
                         .then((response) => {
                             if (response.data.success || response.data.result) {
                                 // 창의 화면 변수 false로 창 닫기
