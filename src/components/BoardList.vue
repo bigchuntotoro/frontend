@@ -1,7 +1,7 @@
 <template>
     <div>
         <el-table border :data="boardList" @row-click="clickRow">
-            <el-table-column :min-width="22" prop="bno" label="글번호"></el-table-column>
+            <el-table-column :min-width="15" prop="bno" label="글번호"></el-table-column>
             <el-table-column prop="title" label="제목"></el-table-column>
             <el-table-column prop="content" label="내용"></el-table-column>
             <el-table-column :min-width="20" prop="writer" label="작성자"> </el-table-column>
