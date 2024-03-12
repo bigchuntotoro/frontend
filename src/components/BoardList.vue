@@ -35,7 +35,7 @@
                 axios
                     //.get('http://192.168.56.101:8181/vueBoard/board/get-board-list.do') //Spring 
                     //.get('http://192.168.56.101:8888/board/get-board-list.do') //Spring Boot
-                    .get('http://ec2-43-200-96-196.ap-northeast-2.compute.amazonaws.com:8888/board/get-board-list.do') //Spring Boot
+                    .get('http://43.200.96.196:8888/board/get-board-list.do') //Spring Boot
                     .then((response) => {
                         if (response.data.success) {
                             this.boardList = response.data.result;
