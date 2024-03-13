@@ -34,7 +34,6 @@
             getBoardList() {
                 axios
                     //.get('http://192.168.56.101:8181/vueBoard/board/get-board-list.do') //Spring 
-                    //.get('http://192.168.56.101:8888/board/get-board-list.do') //Spring Boot
                     .get('http://43.200.96.196:8888/board/get-board-list.do') //Spring Boot
                     .then((response) => {
                         if (response.data.success) {
