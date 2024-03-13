@@ -45,7 +45,7 @@
                 };
                 axios
                     //.post('http://192.168.56.101:8181/vueBoard/board/get-board-detail.do', params) //Spring
-                    .post('http://ec2-43-200-96-196.ap-northeast-2.compute.amazonaws.com:8888/board/get-board-detail.do', params) //Spring Boot
+                    .post('http://43.200.96.196:8888/board/get-board-detail.do', params) //Spring Boot
                     .then((response) => {
                         if (response.data.success) {
                             this.boardDetail = response.data.result;
@@ -70,7 +70,7 @@
                 };
                 axios
                     //.post('http://192.168.56.101:8181/vueBoard/board/delete-board.do', params) //Spring
-                    .post('http://ec2-43-200-96-196.ap-northeast-2.compute.amazonaws.com:8888/board/delete-board.do', params) //Spring Boot
+                    .post('http://43.200.96.196:8888/board/delete-board.do', params) //Spring Boot
                     .then((response) => {
                         if (response.data.success) {
                             this.openDetail = false;
