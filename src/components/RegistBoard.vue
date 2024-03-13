@@ -68,7 +68,7 @@
                             console.log(error);
                         });
                 }
-                // 글 수정을 호출
+                // 글 수정 호출
                 else {
                     axios
                         //.post('http://192.168.56.101:8181/vueBoard/board/edit-board.do', this.setParams) //Spring
